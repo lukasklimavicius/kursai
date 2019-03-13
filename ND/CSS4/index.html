@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 CSS namų darbas</title>
+    
+    <style>
+        .alignCenter {
+            text-align: center;
+            margin: 30px 0;
+        }
+        #centerDiv {        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            margin: 0 auto;
+            width: 600px;
+            border-bottom: 1px solid black;
+            border-top: 2px solid black;
+        }
+        .alignCenter p {
+            margin: 0 auto;
+            width: 600px;
+        }
+        .letterSpacing {
+            letter-spacing: 2px;
+        }
+        a:hover {
+            color: red;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="alignCenter">
+        <img src="https://github.com/zigmantasvcs/resources/blob/master/page%20task/logo.gif?raw=true" alt="logo">
+    </div>
+    
+    <div id="centerDiv">
+            <div class="letterSpacing"><a href="#">PAGRINDINIS</a></div>
+            <div class="letterSpacing"><a href="#">PARDAVIMAS</a></div>
+            <div class="letterSpacing"><a href="#">REMONTAS</a></div>
+            <div class="letterSpacing"><a href="#">APIE</a></div>
+            <div class="letterSpacing"><a href="#">KONTAKTAI</a></div>
+    </div>
+    
+    <div class="alignCenter">
+        <img src="https://github.com/zigmantasvcs/resources/blob/master/page%20task/keys.jpg?raw=true" alt="klaviatūrų nuotrauka">
+    </div>
+    
+    <div class="alignCenter letterSpacing">
+        <p>Mes specializuojamės klasikinių klaviatūrų, ypač "Fender Rhodes", Wurlitzer EP200 ir Hohner Clavinet, pardavimu ir taisymu.</p>
+    </div>
+    
+</body>
+    
+</html>
