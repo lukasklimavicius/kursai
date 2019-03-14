@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 6 namų darbas</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+        .inputName, .inputValue {
+            width: 100px;
+            float: left;
+        }
+        .inputContainer {
+            padding:  10px 0 15px 0;
+            margin: 0 0 2px 0;
+        }
+
+        .langContainer {
+            max-width: 330px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .langContainer > span {
+            margin: 5px;
+            width: 96px;
+        } 
+        * {
+        font-family: 'Raleway', sans-serif;   
+        }
+        .infoContainer {
+            background-color: burlywood;
+        }
+        .questionsContainer {
+            background-color: coral;
+        }
+        .textInputContainer {
+            border-radius: 10px
+        }
+        .buttonSubmit {
+            width: 150px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: lemonchiffon;
+            border-radius: 7px; 
+            box-shadow: 1px 1px grey;
+        }
+        .buttonSubmit:hover {
+            background-color: forestgreen;
+        }
+        </style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset class="infoContainer"> 
+            <legend>Jūsų informacija</legend>
+            
+            <div class="inputContainer">
+                <span class="inputName">
+                    Vardas:
+                </span>
+                <span class="inputValue">
+                    <input type="text" name="vardas" required>
+                </span>
+            </div>
+            
+            <div class="inputContainer">
+                <span class="inputName">
+                    Pavardė:
+                </span>
+                <span class="inputValue">
+                    <input type="text" name="pavarde" required>
+                </span>  
+            </div>  
+            
+        </fieldset>
+        <fieldset class="questionsContainer"> 
+            <legend>Klausimai</legend>
+            
+            <div class="inputContainer">
+                <span class="selectName">
+                    Kaip sužinojote apie mus?
+                </span>
+                <span class="selectValue">
+                    <select>
+                        <option value="google">Google</option>
+                        <option value="draugai">Draugai</option>
+                        <option value="fb">Facebook</option>
+                    </select>
+                </span>
+            </div>
+            
+            <div class="inputContainer">
+                <span>Ar apsilankysite vėl?</span><br>
+                <span>Taip</span>
+                <span>
+                    <input type="radio" name="choose1" value="taip">
+                </span>
+                <span>Ne</span>
+                <span>
+                    <input type="radio" name="choose2" value="ne">
+                </span>
+                <span>Galbūt</span>
+                <span>
+                    <input type="radio" name="choose3" value="galbut">
+                </span>
+            </div>
+            
+            <div class="inputContainer">
+                <span>Ką manote apie kursą?</span><br>
+                <span><textarea name="tekstas" rows="7" cols="80" placeholder="Rašykite viską ką galvojate" class="textInputContainer"></textarea></span>
+            </div>
+            <span>Pažymėkite programavimo kalbas su kuriomis esate susipažinę:</span><br>
+                 
+            <div class="langContainer">
+                <span><input type="checkbox" value="c#">C#</span>
+                <span><input type="checkbox" value="java">JAVA</span>
+                <span><input type="checkbox" value="php">PHP</span><br>
+                <span><input type="checkbox" value="html">HTML </span>
+                <span><input type="checkbox" value="css">CSS</span>
+                <span><input type="checkbox" value="js">JavaScript</span><br>
+                <span><input type="checkbox" value="python">Python</span>
+                <span><input type="checkbox" value="ruby">Ruby</span>                    
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Siųsti" class="buttonSubmit">
+            </div>
+            
+        </fieldset>      
+    </form>
+    
+</body>
+    
+</html>
