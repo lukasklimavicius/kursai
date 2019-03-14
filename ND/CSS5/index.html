@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 namų darbas</title>
+    <style>
+         .button{
+            width: 3em;
+            height: 3em;
+            margin: 0.2em 0;
+            color: #23f21f;
+            background-color: #2058b2;
+            border-radius: 5px;
+        }
+        .skaiciuot{
+            width: 13em;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px #999;
+            
+        }
+        .skaiciuot:hover {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 1px #999;
+        }
+        .ivedimoLaukas {
+            width: 13em;
+            background-color: lightblue;
+            border: 3px solid white;
+            border-radius: 5px;
+            -webkit-animation: animacija 1s infinite;
+            -moz-animation: animacija 1s infinite;
+            -o-animation: animacija 1s infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes animacija {
+            0% {
+                border-bottom: 3px solid red;
+            }
+            25% {
+                border-left: 3px solid red;
+            }
+            50% {
+                border-top: 3px solid red;
+            }
+            100% {
+                border-right: 3px solid red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="ivedimoLaukas" class="ivedimoLaukas">
+    <table>
+        <tr>
+            <td><input type="button" value="7" class="button"></td>
+            <td><input type="button" value="8" class="button"></td>
+            <td><input type="button" value="9" class="button"></td>
+            <td><input type="button" value="+" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="button"></td>
+            <td><input type="button" value="5" class="button"></td>
+            <td><input type="button" value="6" class="button"></td>
+            <td><input type="button" value="-" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="button"></td>
+            <td><input type="button" value="2" class="button"></td>
+            <td><input type="button" value="3" class="button"></td>
+            <td><input type="button" value="x" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="button"></td>
+            <td><input type="button" value="C" class="button"></td>
+            <td><input type="button" value="CE" class="button"></td>
+            <td><input type="button" value=":" class="button"><br></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" value="Skaičiuoti" class="skaiciuot"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
