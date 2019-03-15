@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 7 namų darbas</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        .calendarContainer {
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .square {
+            margin: 3px;
+            height: 150px;
+            width: 150px;
+            border: 1px solid grey;
+            box-shadow: 1px 1px 5px grey;
+            border-style: outset;
+        }
+        .square:hover {
+            background-color: seagreen;
+        }
+        .calendarContainer span {
+            position: relative;
+            left: 15px;
+            top: 15px;
+            font-family: 'Indie Flower', cursive;
+        }
+        .weekendDay {
+            background-color: #FFBB00;
+        }
+        span.label {
+            margin-left: -10px;
+            padding: 0 10px 0 40px;
+            position: relative;
+            top: 50px;
+/*            left: -10px;*/
+            background-color: red;
+            color: white;
+        }
+        .Label30thContainer {
+            position: relative;
+            top: 50px;
+            margin: 0 5px;
+            padding-left: 5px;
+            background-color: red;
+        }
+        .Label11thContainer {
+            position: relative;
+            top: 50px;
+            margin: 0 5px;
+            padding-left: 5px;
+            background-color: yellow;
+        }
+        .Label15thContainer {
+            position: relative;
+            top: 50px;
+            margin: 0 5px;
+            padding-left: 5px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>KOVAS</h2>
+    <div class="calendarContainer">
+        <div class="square"><span>1</span></div>
+        <div class="square"><span>2</span></div>
+        <div class="square"><span>3</span></div>
+        <div class="square"><span>4</span></div>
+        <div class="square"><span>5</span></div>
+        <div class="square weekendDay"><span>6</span></div>
+        <div class="square weekendDay"><span>7</span></div>
+        <div class="square"><span>8</span></div>
+        <div class="square"><span>9</span></div>
+        <div class="square"><span>10</span></div>
+        <div class="square"><span>11</span>
+            <div class="Label11thContainer">
+                Nepriklausomybės atkūrimo diena
+            </div>
+        </div>
+        <div class="square"><span>12</span></div>
+        <div class="square weekendDay"><span>13</span></div>
+        <div class="square weekendDay"><span>14</span></div>
+        <div class="square"><span>15</span>
+            <div class="Label15thContainer">
+                Seminaras
+            </div>
+        </div>
+        <div class="square"><span>16</span></div>
+        <div class="square"><span>17</span></div>
+        <div class="square"><span>18</span></div>
+        <div class="square"><span>19</span></div>
+        <div class="square weekendDay"><span>20</span></div>
+        <div class="square weekendDay"><span>21</span></div>
+        <div class="square"><span>22</span></div>
+        <div class="square"><span>23</span></div>
+        <div class="square"><span>24</span></div>
+        <div class="square"><span>25</span></div>
+        <div class="square"><span>26</span></div>
+        <div class="square weekendDay"><span>27</span></div>
+        <div class="square weekendDay"><span>28</span></div>
+        <div class="square"><span>29</span></div>
+        <div class="square">
+            <span>30</span>
+            <div class="Label30thContainer">
+                Susitikimas
+            </div>
+        </div>
+        <div class="square"><span>31</span></div>
+    </div>
+</body>
+    
+</html>
