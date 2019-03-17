@@ -1,0 +1,97 @@
+ .registrationContainer {
+            width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #FFF6A3;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+        .registeredContainer {
+            width: 650px;
+            padding-bottom: 15px;
+            background-color: #C2FFBD;
+        }
+        .inputName {
+            width: 150px;
+            float: left;
+            margin: 0 15px;
+        }
+        input[type=text] {
+            width: 289px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .inputContainer {
+            padding:  2px 0;
+            margin: 0 0 2px 0;
+        }
+        input[type=submit] {
+            width: 455px;
+            height: 30px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        h2 {
+            margin: 0px 15px 40px 15px;
+            padding-top: 40px;
+        }
+        p {
+            margin: 0 0 40px 15px;
+        }
+        .tableHeadContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 620px;
+            height: 35px;
+            margin: 0 15px 0 15px;
+            background-color: #C7B8FF; 
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;      
+        }
+        .tableHeadContainer div {
+            margin: 2px 0 2px 15px;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 600;
+        }
+        .tableDataContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 620px;
+            margin: 0 15px 0 15px;
+            background-color: #C2FFBD; 
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+        }
+        .pavarde {
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid black;
+            width: 128px;
+        }
+        .pastas {
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid black;
+            width: 176px;
+        }
+        .vardas{
+            text-align: left;
+            line-height: 35px;
+            width: 300px;
+            height: 35px;
+            padding-left: 10px;
+            border: 1px solid black;
+        }
+        .vardasPav {
+            width: 300px;
+            height: 35px;
+        }
+        .pavardePav {
+            width: 100px;
+        }
+        .pastasPav {
+            width: 143px;
+        }
