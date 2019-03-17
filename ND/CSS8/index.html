@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>8 CSS namų darbas</title>
+</head>
+
+<body>
+    <h1>Registracija į renginį</h1>
+    <div class="registrationContainer">
+        <h2>Registracijos forma</h2>
+        <div class="tekstas"><p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius.</p></div>
+        <form>
+              <div class="inputContainer">
+                <span class="inputName">
+                    Vardas:
+                </span>
+                <span class="inputValue">
+                    <input type="text" name="vardas" required>
+                </span>
+            </div>
+            
+            <div class="inputContainer">
+                <span class="inputName">
+                    Pavardė:
+                </span>
+                <span class="inputValue">
+                    <input type="text" name="pavarde" required>
+                </span>  
+            </div>    
+            
+            <div class="inputContainer">
+                <span class="inputName">
+                    Elektroninis paštas
+                </span>
+                <span class="inputValue">
+                    <input type="text" name="epastas" required>
+                </span>  
+            </div>
+            
+            <div class="inputName">
+                <input type="submit" value="Registruoti">
+            </div>
+        </form>
+    </div>
+    <div class="registeredContainer">
+        <h2>Jau užsiregistravę dalyviai:</h2>
+        <div class="tableHeadContainer">
+            <div class="vardasPav">Vardas</div>
+            <div class="pavardePav">Pavardė</div>
+            <div class="pastasPav">Elektroninis paštas</div>
+         </div>
+        <div class="tableDataContainer">
+            <div class="vardas">Jonas</div>
+            <div class="pavarde">Jonaitis</div>
+            <div class="pastas">jonaits@gmail.com</div>
+            <div class="vardas">Petras</div>
+            <div class="pavarde">Petraitis</div>
+            <div class="pastas">petraitis@gmail.com</div>
+        </div>    
+    </div>
+</body>
+    
+</html>
