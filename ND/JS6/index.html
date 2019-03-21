@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 JS namų darbas</title>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form>
+        <div>Įveskite amžių <input type="number" id="age" required></div>
+        <button type="submit" id="checkButton">Patikrinti</button>
+    </form>
+    
+    <script type="text/javascript">
+        
+        $('#checkButton').on('click', function () {
+            var amzius = document.getElementById('age').value; 
+            if (amzius >= 18) {
+                    alert('Galite užeiti į svetainę');
+                }
+            else {
+                alert('Jūs negalite užeiti į svetainę');
+            }
+        });
+                                        
+    </script>
+</body>
+    
+</html>
