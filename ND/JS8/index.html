@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 JS namų darbas</title>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+   
+    <script type="text/javascript">
+        
+        var nameArray = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        document.write('Pilnas masyvas: ');
+        for (var i = 0; i < nameArray.length; i++) {
+             document.write(nameArray[i] + ' ');
+        }
+        
+        // 1 būdas ištrina Ema
+        document.write('<br>1 būdas: ')
+        function cutName(masyvas, vardas) {
+    
+            if (masyvas.indexOf(vardas) > -1) {
+                masyvas.splice(masyvas.indexOf(vardas),1);
+                }
+            for (var i = 0; i<masyvas.length; i++) {
+                document.write(masyvas[i] + ' '); 
+                console.log(masyvas[i] + ' '); 
+            }
+        }
+    
+        cutName(nameArray, 'Ema');
+        
+        // 2 būdas ištrina Ona
+        for (var i = nameArray.length; i >= 0 ; i--) {
+            if (nameArray.includes('Ona', i) == true) {
+                nameArray.splice(i,1);
+                break;
+            }
+        }
+        document.write('<br>2 būdas: ')
+        for (var i = 0; i < nameArray.length; i++) {
+            document.write(nameArray[i] + ' ');
+        }
+       
+        // 3 būdas ištrina Urtė
+        
+        document.write('<br>3 būdas: ')
+        var newArray = [];
+        for (var i = 0; i < nameArray.length; i++) {
+            if (nameArray[i] != 'Urtė') {
+                newArray.push(nameArray[i]);
+            }
+        }
+        for (var i = 0; i < newArray.length; i++) {
+             document.write(nameArray[i] + ' ');
+        }
+        
+        // 4 būdas ištrina Martynas
+        
+        var nameArrayTest = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        for (var i = nameArrayTest.length; i >= 0 ; i--) {
+            if (nameArrayTest.includes('Martynas', i) == true) {
+                var deletedIndex = i;
+                delete nameArrayTest[i];
+                break;
+            }
+        }
+        for (var i = 0; i < nameArrayTest.length; i++)
+            {
+                if (nameArrayTest[i] == undefined) {
+                    nameArrayTest.splice(i, 1);
+                }
+            }
+        document.write('<br>4 būdas: ')
+        for (var i = 0; i < nameArrayTest.length; i++) {
+            document.write(nameArrayTest[i] + ' ');
+        }
+        
+        // 5 būdas ištrina Petras
+        
+        var nameArrayTest1 = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        if (nameArrayTest1.indexOf('Petras') > -1) {
+               var Array5 = nameArrayTest1.slice(0, (nameArrayTest1.indexOf('Petras'))).concat(nameArrayTest1.slice((nameArrayTest1.indexOf('Petras'))+1, nameArrayTest1.length));
+            }
+        document.write('<br>5 būdas: ')
+        for (var i = 0; i < Array5.length; i++) {
+            document.write(Array5[i] + ' ');
+        }
+        
+        // 6 būdas ištrina Jonas
+        
+        var nameArrayTest2 = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        var filtered = nameArrayTest2.filter(function(reiksme){
+                return reiksme != 'Jonas';                                 
+            });
+        document.write('<br>6 būdas: ')
+        for (var i = 0; i < filtered.length; i++) {
+            document.write(filtered[i] + ' ');
+        }
+        
+    </script>
+</body>
+    
+</html>
