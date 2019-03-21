@@ -17,7 +17,7 @@
         for (var i = 0; i < nameArray.length; i++) {
              document.write(nameArray[i] + ' ');
         }
-        
+        var selectName = 'Ema'; // pasirinkti kokį vardą ištrinti
         // 1 būdas ištrina Ema
         document.write('<br>1 būdas: ')
         function cutName(masyvas, vardas) {
@@ -31,11 +31,11 @@
             }
         }
     
-        cutName(nameArray, 'Ema');
+        cutName(nameArray, selectName);
         
         // 2 būdas ištrina Ona
         for (var i = nameArray.length; i >= 0 ; i--) {
-            if (nameArray.includes('Ona', i) == true) {
+            if (nameArray.includes(selectName, i) == true) {
                 nameArray.splice(i,1);
                 break;
             }
@@ -50,7 +50,7 @@
         document.write('<br>3 būdas: ')
         var newArray = [];
         for (var i = 0; i < nameArray.length; i++) {
-            if (nameArray[i] != 'Urtė') {
+            if (nameArray[i] != selectName) {
                 newArray.push(nameArray[i]);
             }
         }
@@ -62,7 +62,7 @@
         
         var nameArrayTest = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
         for (var i = nameArrayTest.length; i >= 0 ; i--) {
-            if (nameArrayTest.includes('Martynas', i) == true) {
+            if (nameArrayTest.includes(selectName, i) == true) {
                 var deletedIndex = i;
                 delete nameArrayTest[i];
                 break;
@@ -82,8 +82,8 @@
         // 5 būdas ištrina Petras
         
         var nameArrayTest1 = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
-        if (nameArrayTest1.indexOf('Petras') > -1) {
-               var Array5 = nameArrayTest1.slice(0, (nameArrayTest1.indexOf('Petras'))).concat(nameArrayTest1.slice((nameArrayTest1.indexOf('Petras'))+1, nameArrayTest1.length));
+        if (nameArrayTest1.indexOf(selectName) > -1) {
+               var Array5 = nameArrayTest1.slice(0, (nameArrayTest1.indexOf(selectName))).concat(nameArrayTest1.slice((nameArrayTest1.indexOf(selectName))+1, nameArrayTest1.length));
             }
         document.write('<br>5 būdas: ')
         for (var i = 0; i < Array5.length; i++) {
@@ -94,7 +94,7 @@
         
         var nameArrayTest2 = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
         var filtered = nameArrayTest2.filter(function(reiksme){
-                return reiksme != 'Jonas';                                 
+                return reiksme != selectName;                                 
             });
         document.write('<br>6 būdas: ')
         for (var i = 0; i < filtered.length; i++) {
