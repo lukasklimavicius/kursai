@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 JS namų darbas</title>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form>
+        <div>Įveskite pirmą skaičių <input type="number" id="pirmasSkaicius" required></div>
+        <div>Įveskite antrą skaičių <input type="number" id="antrasSkaicius" required></div>
+        <button type="submit" id="calcButton">Skaičiuoti</button>
+    </form>
+    
+    <script type="text/javascript">
+        
+      function skaiciuoti (dalmuo, daliklis) {
+            if (daliklis == 0)
+                {
+                    result = 'Dalyba iš nulio negalima';
+                }
+            else 
+            {
+                var result = dalmuo / daliklis;
+            }
+            return result;
+        }
+        
+       
+        
+        $('#calcButton').on('click', function () {
+            var pirmas = document.getElementById('pirmasSkaicius').value; // kodėl permetus var pirmas ir antras virš funkcijos, ji nebemato jų.
+            var antras = document.getElementById('antrasSkaicius').value; //
+            var atsakymas = skaiciuoti(pirmas, antras);
+            alert(atsakymas);
+            console.log(atsakymas);
+        });
+                                        
+    </script>
+</body>
+    
+</html>
