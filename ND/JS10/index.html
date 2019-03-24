@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 JS namų darbas</title>
+</head>
+
+<body>
+    <script type=text/javascript>
+        var objektas1 = {"id":1,"item":"Atsuktuvas","date":"2018","color":"geltona","price": "5"};
+        var objektas2 = {"id":2,"item":"Raktas","date":"2018","color":"pilka","price": "2"};
+        var objektuMasyvas = [objektas1,objektas2];
+        
+        function spausdinti(objectArray) {
+            //var preke = '';
+            for (var i = 0; i < objectArray.length; i++) {
+                console.log('#' + objectArray[i].id);
+                console.log ('Prekė ' + objectArray[i].item);
+                console.log ('Pagaminimo data ' + objectArray[i].date);
+                console.log ('Spalva ' + objectArray[i].color);
+                console.log ('Kaina ' + objectArray[i].price);
+                
+                if (i+1!=objectArray.length) {
+                console.log('\n');
+                }
+                // Kitu būdu su vienu console.log
+              //  preke += '#' + objectArray[i].id + '\n' + 'Prekė ' + objectArray[i].item + '\n' + 'Pagaminimo data ' + objectArray[i].date + '\n' + 'Spalva ' + objectArray[i].color + '\n' + 'Kaina ' + objectArray[i].price + '\n' + '\n';
+            }
+            //console.log(preke);
+        }
+        spausdinti(objektuMasyvas);
+    </script>
+</body>
+    
+</html>
