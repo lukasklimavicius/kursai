@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 JS namų darbas</title>
+    <style>
+        .boldText {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        td, th, table {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Viešbučiai (su laisvais kambariais)</h1>
+    <script type="text/javascript">
+    
+    var viesbuciai = [
+        {
+        "name": '<span class="boldText">Radisson</span><br>',
+        "Address": '<span class="boldText">Konstitucijos pr. 29</span><br>',
+        "Rooms":[
+        {"Number":210, "GuestCount":2, "Price":100},
+        {"Number":211, "GuestCount":2, "Price":110},
+        {"Number":212, "GuestCount":2, "Price":109}
+        ]
+        },
+        {
+        "name": '<span class="boldText">Vilnius Inn</span><br>',
+        "Address": '<span class="boldText">Šiaulių g. 3</span><br>',
+        "Rooms":[
+        {"Number":11, "GuestCount":2, "Price":100},
+        {"Number":15, "GuestCount":1, "Price":58},
+        {"Number":22, "GuestCount":2, "Price":80},
+        {"Number":23, "GuestCount":2, "Price":99}
+        ]
+        }
+        ];
+        
+        for (var u = 0; u<viesbuciai.length; u++) {
+            document.write(viesbuciai[u].name + '<br>' + viesbuciai[u].Address + '<br>');
+
+            document.write('<table><tr><th>Kambario numeris</th><th>Žmonių skaičius</th><th>Kaina</th></tr>');
+            for (var i = 0; i<viesbuciai[u].Rooms.length; i++) {        
+                document.write('<tr><td>' + viesbuciai[u].Rooms[i].Number + '</td><td>' + viesbuciai[u].Rooms[i].GuestCount + '</td><td>' + viesbuciai[u].Rooms[i].Price + '</td></tr>');
+            }
+            document.write('</table>');
+        }
+    </script>
+    
+</body>
+    
+</html>
