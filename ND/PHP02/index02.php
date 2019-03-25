@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <?php echo $miestas.' - Lietuvos sostinė';?>
+    <?php echo $miestas. ' - Lietuvos sostinė';?>
     <?php echo "$miestas ir $šalis sparčiai auga";?>
 </body>
     
